@@ -1,0 +1,24 @@
+# Compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Voice Models
+*.onnx
+*.onnx.json
+
+# Audio temporary files
+*.wav
+*.mp3
+
+# Configuration (Optional: ignore your local config if you want)
+# config.json
