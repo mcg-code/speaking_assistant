@@ -21,8 +21,8 @@ def show_header():
 
 def handle_practice_session(current_config: dict):
     show_header()
-    console.print(f"[dim]Starting session with model: {current_config['model_name']}[/dim]\n")
-    console.print("Type your responses. Type [bold red]'exit'[/bold red] to finish and get your feedback.\n")
+    console.print(f"Starting session with model: [yellow]{current_config['model_name']}[/yellow]\n")
+    console.print("Type your responses. Type [bold red]'q'[/bold red] or [bold red]'exit'[/bold red] to finish and get your feedback.\n")
     
     session = PracticeSession(current_config)
     
@@ -32,7 +32,7 @@ def handle_practice_session(current_config: dict):
             user_input = stt_service.get_hybrid_input(prompt_text="")
 
             
-            if user_input.lower() in ['exit', 'quit']:
+            if user_input.lower() in ['exit', 'quit', 'q']:
                 break
                 
             if not user_input:

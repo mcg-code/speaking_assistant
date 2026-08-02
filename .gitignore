@@ -20,5 +20,8 @@ venv.bak/
 *.wav
 *.mp3
 
-# Configuration (Optional: ignore your local config if you want)
-# config.json
+# Configuration
+config.json
+
+# ChromaDB
+.chroma_db/
